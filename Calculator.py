@@ -21,26 +21,29 @@ while True:
     choice= input("Input your choise: ").lower()
 
 
-    if choice == "a":
+    if choice == "a" or choice.lower == "addition":
         print("Addition")
         a = input("First number: ")
         b = input("Second number: ")
         Addition(int(a),int(b))
-    elif choice == "b":
+    elif choice == "b" or choice.lower == "subtraction":
         print("Subtraction")
         a = input("First number: ")
         b = input("Second number: ")
         Subtraction(int(a),int(b))
-    if choice == "c":
+    if choice == "c" or choice.lower == "multiplication":
         print("Multiplication")
         a = input("First number: ")
         b = input("Second number: ")
         Multiplication(int(a),int(b))
-    if choice == "d":
+    if choice == "d" or choice.lower == "devision":
         print("Devision")
         a = input("First number: ")
         b = input("Second number: ")
         Devision(int(a),int(b))
-    elif choice == "e":
+    elif choice == "e" or choice.lower == "exit":
         print("\nProgram ended")
         quit()
+    else:
+        print("Couldn't find your choise")
+        print("Please try again")
